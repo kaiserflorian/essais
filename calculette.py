@@ -57,3 +57,4 @@ else:
 print("a=" + str(a))
 print("b=" + str(b))
 print("Le résultat de a " + str(operation) + " b = " + str(resultat))
+    exit()

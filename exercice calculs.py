@@ -64,8 +64,9 @@ else:
 print("")
 print("Mhhh je vérifie si ta réponse est juste...")
 
-# TODO: Idée faire jouer un son de bravoooo
 if reponse==resultat:
     print("Bravo bonne réponse!!!!")
+    exit()
 else:
     print("Faux, la bonne réponse est: " + str(resultat))
+    exit()

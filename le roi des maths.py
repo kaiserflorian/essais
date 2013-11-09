@@ -7,7 +7,7 @@
 __author__ = 'kaiserfl'
 import random
 
-print(">>> Le roi des calculs <<<")
+print(">>> Le roi des maths <<<")
 print("")
 
 # Trouver un chiffre a
@@ -52,5 +52,7 @@ print("")
 
 if reponse==resultat:
     print("Bravo bonne réponse!!!!")
+    exit()
 else:
     print("Faux, la bonne réponse est: " + str(resultat))
+    exit()

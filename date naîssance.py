@@ -17,7 +17,8 @@ if calcul >= 0:
     if calcul > 105:
         print("Ouhlala, vous êtes en très bonne santé...")
     if calcul > 200:
-        print("Euh tu n'est pas en train de tricher???????")
+        print("Euh tu n'es pas en train de tricher???????")
+        exit()
 else:
     print("Tu rigoles, t'es même pas encore né!")
-
+    exit()
