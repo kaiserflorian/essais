@@ -1,8 +1,8 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-# Programme qui permet de faire des calculs et qui affiche les résultats
 #
-# TODO: Encoder les accents car sur la Tab il n'affiche pas les "divisé"...
+# Programme qui permet de faire des calculs
+# mais avant d'afficher la réponse il demande la solution
 #
 __author__ = 'kaiserfl'
 
@@ -30,6 +30,13 @@ except ValueError:
     print("Hého - c'est pas un chiffre")
     exit()
 
+# Demander la réponse
+try:
+    reponse = float(input("Entrez la réponse:"))
+except ValueError:
+    print("Hého - c'est pas un résultat valide")
+    exit()
+
 # Calcul en fonction de l'opération
 if operation=="+" or operation=="plus":
     resultat = a + b
@@ -53,7 +60,12 @@ else:
     print(" **, puissance, //, division entière, %, modulo ")
     exit()
 
-# Afficher les valeurs et le résultat de l'opération
-print("a=" + str(a))
-print("b=" + str(b))
-print("Le résultat de a " + str(operation) + " b = " + str(resultat))
+# Comparer si la reponse est identique au resultat
+print("")
+print("Mhhh je vérifie si ta réponse est juste...")
+
+# TODO: Idée faire jouer un son de bravoooo
+if reponse==resultat:
+    print("Bravo bonne réponse!!!!")
+else:
+    print("Faux, la bonne réponse est: " + str(resultat))
